@@ -1,0 +1,110 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: pink;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+  
+
+input[type=text], input[type=password], textarea,select {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: 	#BEBEBE;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+<body>  
+<form onsubmit="takevalue()">  
+  <div class="container">  
+  <center>  <h1> Course Registration Form</h1> </center>  
+  <hr>  
+  <label><b>Name</b>  </label>   
+<input type="text" name="name" id="name" placeholder= "Enter Name" size="15" required />   
+
+<label for="email"><b>Email</b></label>  
+<input type="text" placeholder="Enter Email" id="email" name="email" required>  
+
+<label><b>Address :</b> </label>
+<textarea cols="80" rows="5" id="address" placeholder="Current Address" value="address" required>  
+</textarea> 
+  
+<label> <b>Courses : </b> </label>   
+<select id="courses" required>  
+<option value="Course">Course</option>  
+<option value="C">C</option>  
+<option value="C++">C++</option>  
+<option value="Java">Java</option>  
+<option value="Python">Python</option>  
+<option value="SQL">SQL</option>  
+<option value="PHP">PHP</option>  
+</select>  
+ <br><br>
+ <button type="submit" value="submit" class="registerbtn">Register</button>    
+</form> 
+
+
+<script>
+  
+	function takevalue()
+  
+	{
+		var name = document.getElementById
+    ("name").value;
+
+    var email = document.getElementById
+    ("email").value;
+
+    var address = document.getElementById
+    ("address").value;
+
+    var courses = document.getElementById
+    ("courses").value;
+    
+    document.write("Registered Student<br><br>");
+
+
+    document.write("Your name is:" + name + "<br>");
+    document.write("Email:" + email + "<br>");
+    document.write("Address:" + address + "<br>");
+    document.write("Course:" + courses + "<br>");
+	}	
+
+</script>
+
+
+</body>  
+</html>  
+
